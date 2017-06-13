@@ -1,0 +1,44 @@
+
+.form_heading {
+    display: inline;
+}
+.registration_form ul {
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.registration_form li {
+    padding: 15px;
+    border-bottom:1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.registration_form label {
+    width: 150px;
+    margin-top: 5px;
+    display: inline;
+    float: left;
+    padding: 5px;
+}
+
+.registration_form input {
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+.registration_form select {
+    height: 30px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+@media (max-width: 400px) {
+    .registration_form ul {
+        width: 200px;
+    }
+}

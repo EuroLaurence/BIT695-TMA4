@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Title of the document</title>
+</head>
+
+<body>
+<h1 class="form_heading">Register new member</h1>
+
+<form class="registration_form" action="process_form.php"
+  method="post" name="submitnewsalesrecord">
+
+
+    <ul>
+        <li>
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" required pattern="^[A-z]+$" oninvalid="this.setCustomValidity('First name must not be empty and must only contain alphabetical characters.')" onchange="this.setCustomValidity('')"/>
+        </li>
+        
+        <li>
+            <label for="familyname">Family name:</label>
+            <input type="text" name="familyname" id="familyname" required pattern="^[A-z]+$" oninvalid="this.setCustomValidity('Family name must not be empty and must only contain alphabetical characters.')" onchange="this.setCustomValidity('')"/>
+        </li>
+        
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+        </li>
+        
+        <li>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required pattern="^\+(?:[0-9] ?){6,14}[0-9]$" oninvalid="this.setCustomValidity('Phone input must contain: 7-15 digits, the international prefix and only spaces must separate groups of numbers. Example: +99 99 9999 9999')" onchange="this.setCustomValidity('')"/>
+        </li>
+        
+        <li>
+            <button class="submit" type="submit" name="submit">Register</button>
+        </li>
+    </ul>
+    
+</form>
+    
+<table>
+
+</table>
+</body>
+</html>
